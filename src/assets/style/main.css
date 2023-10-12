@@ -1,0 +1,60 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&display=swap');
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.container{
+   width: 1200px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+/* Header style start */
+
+.header{
+    margin: 10px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+
+.menu-logo{
+    font-size: 36px;
+}
+
+.menu-logo::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    top: 45px;
+    left: 233px;
+    right: 0;
+    bottom: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #fda300;
+    border-radius: 50%;
+}
+
+.nav-bar{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    font-size: 19px;
+    text-shadow: 1px 1px 2px pink;
+    transition: all 0.3s; /* Add smooth transition for a smoother hover effect */
+}
+
+.nav-item:hover {
+    font-size: 22px; 
+    text-shadow: 2px 2px 4px pink;
+    color: rgb(247, 241, 241); 
+}
