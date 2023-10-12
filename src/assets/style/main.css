@@ -50,7 +50,7 @@ body{
 .nav-item {
     font-size: 19px;
     text-shadow: 1px 1px 2px pink;
-    transition: all 0.3s; /* Add smooth transition for a smoother hover effect */
+    transition: all 0.3s; 
 }
 
 .nav-item:hover {
@@ -212,3 +212,77 @@ body{
   }
 
 /* Header style end */
+
+/* Main style start */
+
+
+.main {
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   background-color: rgb(47, 47, 47);
+    height: 100vh;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.game-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.game-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s ease-in-out 0.5s;
+}
+
+.play-button {
+    display: inline-block;
+    background: #fda300;
+    color: #252525;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background 0.3s;
+}
+
+.play-button:hover {
+    background: #ffcc29;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Main style end */
+
+/* footer style start */
+
+footer{
+    background-color:rgb(47, 47, 47) ;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+/* footer style end */
