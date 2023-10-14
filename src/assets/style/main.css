@@ -291,15 +291,11 @@ footer{
 
 .products-box {
     display: flex;
-    flex-direction: column;
     gap:40px;
     margin: 70px;
 }
 
-.products-row{
-    display: flex;
-    gap: 20px;
-}
+
 .product_box {
     width: 300px;
     padding: 10px;
@@ -321,6 +317,7 @@ footer{
 
 .product_box img {
     width: 200px;
+    height: 300px !important;
 }
 
 .button-18 {
@@ -371,4 +368,8 @@ footer{
     cursor: not-allowed;
     background: rgba(0, 0, 0, 0.08);
     color: rgba(0, 0, 0, 0.3);
+}
+
+body{
+  background-color: #ff0000;
 }
