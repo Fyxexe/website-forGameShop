@@ -290,35 +290,33 @@ footer{
 /* Products style start */
 
 .products-box {
-    display: flex;
-    gap:40px;
-    margin: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 70px;
+  justify-content: space-between; 
 }
 
-
-.product_box {
-    width: 300px;
-    padding: 10px;
-    border: white 3px solid;
-    border-radius: 23px;
-    background-color: rgb(37, 37, 37);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s, box-shadow 0.2s;
+.product-box {
+  width: calc(25% - 40px); 
+  padding: 10px;
+  border: 3px solid white;
+  border-radius: 23px;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between; 
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+
 
 .product_box:hover {
     transform: scale(1.05); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
-.product_box img {
-    width: 200px;
-    height: 300px !important;
-}
 
 .button-18 {
     align-items: center;
@@ -370,6 +368,69 @@ footer{
     color: rgba(0, 0, 0, 0.3);
 }
 
-body{
-  background-color: #ff0000;
+
+/* Single style start */
+
+.specific-box{
+  margin: 100px auto 100px auto;
+width: 1100px;
+height: 600px;
+border-radius: 50px;
+border: 3px solid #fff;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 100px;
+gap: 80px;
+
+}
+.specific__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.specific__info h1{
+  font-size: 36px;
+}
+
+
+
+
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
 }
