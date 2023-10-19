@@ -1,7 +1,7 @@
 <?php 
   $rootFolderName = 'Web2';
   
-  include 'productData.php';
+  include '../inc/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -30,7 +30,7 @@
             <img src="<?php echo $value['imgPath'] ?>" alt="" width="200px">
             <h1><?php echo $value['title'] ;?></h1>
             <p><?php echo $value['price'] . ' '.'$';?></p>
-            <a href="./single.php?id=<?php echo $value['index'] ?>" class="button-18">more info</a>
+            <a href="./single.php?id=<?php echo $value['index'] ?>" class="button-18">BUY</a>
         </div>
     <?php } ?>
 </div>
