@@ -14,10 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['username'])) {
         if (mysqli_stmt_execute($stmt)) {
             header('Location: single.php?id=' . $product_id);
         } else {
-            echo "Ошибка при выполнении SQL-запроса: " . mysqli_error($db);
+            echo "error SQL " . mysqli_error($db);
         }
     } else {
-        echo "Ошибка при создании подготовленного выражения: " . mysqli_error($db);
+        echo "error:" . mysqli_error($db);
     }
 } else {
     header('Location: login.php');

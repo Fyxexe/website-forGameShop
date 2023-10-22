@@ -2,7 +2,7 @@
 $dbServer = 'localhost';
 $dbUsername = 'root';
 $dbPassword = 'root';
-$dbName = '_db';
+$dbName = 'artyom_db';
 
 $db = mysqli_connect($dbServer,$dbUsername,$dbPassword,$dbName)
     or die ('Connection failed!!!');

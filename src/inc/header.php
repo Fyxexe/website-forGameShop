@@ -8,8 +8,13 @@ if (isset($_SESSION['username'])) {
 } else {
     $username = null;
 }
-?>
 
+if (isset($_POST['logout'])) {
+    session_destroy();
+    header('Location: login.php');
+    exit;
+}
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -24,28 +29,28 @@ if (isset($_SESSION['username'])) {
 
 </body>
 <header class="header">
-        <ul class="menu">
-            <li class="menu-logo">
-                <h1>Crypto</h1>
-            </li>
-            <li class="menu-bar">
-                <ul class="nav-bar">
-                    <li class="nav-item"><a href="index.php">Home</a></li>
-                    <li class="nav-item"><a href="products.php">Products</a></li>
-                    <li class="nav-item"><a href="aboutus.php">About Us</a></li>
-                    <li class="nav-item"><a href="feedback.php">Feedback</a></li>
-                    <ul class="account-mange">
-                        <?php
-                        if ($username) {
-                            echo '<div class="user-info">' . '<img src="./public/icons/avatar.png" alt="" width="30px">' . $username . '</div>';
-                        } else {
-                            echo '<li><button class="button-62" role="button"><a href="login.php">Sign In</a></button></li>';
-                            echo '<li><button class="button-62" role="button"><a href="registration.php">Sign Up</a></button></li>';
-                        }
-                        ?>
-                    </ul>
+    <ul class="menu">
+        <li class="menu-logo">
+            <h1>Crypto</h1>
+        </li>
+        <li class="menu-bar">
+            <ul class="nav-bar">
+                <li class="nav-item"><a href="index.php">Home</a></li>
+                <li class="nav-item"><a href="products.php">Products</a></li>
+                <li class="nav-item"><a href="aboutus.php">About Us</a></li>
+                <li class="nav-item"><a href="feedback.php">Feedback</a></li>
+                <ul class="account-mange">
+                    <?php
+                    if ($username) {
+                        echo '<div class="user-info">' . '<img src="./public/icons/avatar.png" alt="" width="30px">' . $username . '</div>';
+                        echo '<li><form method="post"><button type="submit" class="button-62" name="logout">Logout</button></form></li>';
+                    } else {
+                        echo '<li><button class="button-62" role="button"><a href="login.php">Sign In</a></button></li>';
+                        echo '<li><button class="button-62" role="button"><a href="registration.php">Sign Up</a></button></li>';
+                    }
+                    ?>
                 </ul>
-            </li>
-        </ul>
-    </header>
-
+            </ul>
+        </li>
+    </ul>
+</header>

@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $headers = "From: " . $_POST["email"];
 
         mail($to, $subject, $message, $headers);
-        echo '<dialog open><p>Сообщение успешно отправлено!</p><form method="post"><button>Закрыть</button></form></dialog>';
+        echo '<dialog open><p>Message sent successfully!</p><form method="post"><button>Close</button></form></dialog>';
     }
 }
 
@@ -19,21 +19,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 <div class="feedback-container">
-    <h2>Обратная связь</h2>
+    <h2>Feedback</h2>
     <form method="post">
-        <label for="subject">Заголовок сообщения:</label>
+        <label for="subject">The headline of the message:</label>
         <input type="text" id="subject" name="subject" required>
         <br>
-        <label for="message">Текст сообщения:</label>
+        <label for="message">Message text:</label>
         <textarea id="message" name="message" required></textarea>
         <br>
-        <label for="email">Ваш Email:</label>
+        <label for="email">Your Email:</label>
         <input type="email" id="email" name="email" required>
         <br>
-        <label for="confirmed">Я уверен, что хочу отправить это сообщение:</label>
+        <label for="confirmed">I'm sure I want to send this message:</label>
         <input type="checkbox" id="confirmed" name="confirmed" value="yes">
         <br>
-        <input type="submit" value="Отправить">
+        <input type="submit" value="Send">
     </form>
 </div>
 
