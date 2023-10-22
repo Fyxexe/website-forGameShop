@@ -13,7 +13,7 @@
             <button class="button-78" role="button">more info</button>
             </div>
     </div>
-      <img src="/Web2/public/icons/game.png" alt="Game Image" id='header_info_image'>
+      <img src="./public/icons/game.png" alt="Game Image" id='header_info_image'>
    </div>
     </div>
 
@@ -32,5 +32,6 @@
 
     <?php
         include './src/inc/footer.php';
-    ?>
+    ?><script src="./src/assets/scripts/index.js"></script>
+
  
