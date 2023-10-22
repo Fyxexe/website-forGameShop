@@ -1,0 +1,40 @@
+.mynav,.header{
+	background-color: #212121;
+}
+.mynav{
+	display: flex;
+	justify-content: space-between;
+}
+.mynav ul li a{
+	color:#ffffff;
+}
+.dropdown-menu{
+	background-color: #212121;
+}
+.navbar-collapse{
+	flex-grow: 0;
+}
+.logo img{
+	width: 69px;
+}
+.form{
+	margin:0 auto;
+	width: 560px;
+	padding-bottom: 15px; 
+}
+.input-btn {
+  background-color: #212121;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.input-btn:hover {
+  background-color: #4c4c4c;
+  color:#ffffff;
+}
+.card-text{
+	font-size: 28px !important;
+}
